@@ -101,7 +101,7 @@ http
       res.setHeader('Location','/')
       res.end()} else{
         //其他页面都找不到
-        fs.readFile('./views/404.hrml',function (err,data) {
+        fs.readFile('./views/404.html',function (err,data) {
           if(err){
             return res.end("404")
           }
